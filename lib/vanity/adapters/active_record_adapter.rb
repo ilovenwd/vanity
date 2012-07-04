@@ -40,7 +40,7 @@ module Vanity
       # Experiment model
       class VanityExperiment < VanityRecord
         self.table_name = :vanity_experiments
-        attr_accessible :completed_at, :outcome
+        attr_accessible :completed_at, :outcome, :experiment_id
         
         has_many :vanity_conversions, :dependent => :destroy
 
